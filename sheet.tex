@@ -1,0 +1,115 @@
+\documentclass[dvips,a6paper,8pt]{scrartcl}
+
+\usepackage{multicol}
+
+%\paperheight 297mm
+%\paperwidth 210mm
+%\areaset{190mm}{270mm}
+%\areaset{200mm}{280mm}
+%\typearea{20}
+\usepackage[top=0.5cm,bottom=0.5cm,left=0.5cm,right=0.5cm]{geometry}
+
+
+
+\usepackage[utf8]{inputenc} % Apple-Eingabe-Codierung
+\usepackage[T1]{fontenc} % T1-Codierung nutzt vorhandene Zeichen besser
+
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt plus 0.5ex}
+\newcommand{\chordl}[2]{\texttt{#1}&\texttt{#2}}
+
+\begin{document}
+
+\begin{multicols}{2}
+	\begin{tabular}{l l | c c c c}
+		\multicolumn2c{Chord}&\multicolumn4c{Prefix}\\
+		\texttt{PRMI}&\texttt{NCF}& &F&N&CN\\
+		\hline
+		\chordl{~RMI}{~C~}	& a & A & \multicolumn{2}{c}{+}\\
+		\chordl{P~~I}{~~~} 	& b & B & $\backslash$ & | \\
+		\chordl{~~M~}{~C~} 	& c & C & 7 & \& \\
+		\chordl{~~MI}{~~~} 	& d & D & / & ? \\
+		\chordl{~RMI}{~~~}	& e & E & = & + \\
+		\chordl{P~~~}{~C~} 	& f & F & 9 & ( \\
+		\chordl{~R~~}{~C~} 	& g & G & 8 & * \\
+		\chordl{~RM~}{~~~} 	& h & H &\multicolumn2c{00}\\
+		\chordl{~~~I}{~~~} 	& i & I & 2 & @ \\
+		\chordl{~R~I}{~C~} 	& j & J &\multicolumn2c{()}\\
+		\chordl{~R~I}{~~~} 	& k & K &\multicolumn2c{\$}\\
+		\chordl{~~~I}{~C~} 	& l & L & 6 & \^~ \\ 
+		\chordl{~~MI}{~C~} 	& m & M &\multicolumn2c{*}\\
+		\chordl{PRM~}{~C~} 	& n & N & [ & \{ \\
+		\chordl{PRMI}{~C~}	& o & O & 0 & ) \\
+		\chordl{~RM~}{~C~} 	& p & P &\multicolumn2c{\%}\\
+		\chordl{PR~I}{~C~} 	& q & Q &\multicolumn2c{?}\\
+		\chordl{~~M~}{~~~} 	& r & R & 3 & \# \\
+		\chordl{PRM~}{~~~} 	& s & S & - & \_ \\
+		\chordl{PRMI}{~~~} 	& t & T &\multicolumn2c{000}\\
+		\chordl{PR~~}{~~~}	& u & U &\multicolumn2c{""}\\
+		\chordl{PR~~}{~C~} 	& v & V & ] & \} \\
+		\chordl{P~~~}{~~~} 	& w & W & 5 & \% \\
+		\chordl{P~~I}{~C~} 	& x & X &\multicolumn2c{\&}\\
+		\chordl{~R~~}{~~~} 	& y & Y & 4 & \$ \\
+		\chordl{PR~I}{~~~} 	& z & Z & ` & \textasciitilde \\
+	\end{tabular}
+
+	\begin{tabular}{l l | c}
+		\multicolumn2c{Chord}&\multicolumn1c{Prefix}\\
+		\texttt{PRMI}&\texttt{NCF}& \\
+		\hline
+		\chordl{P~~~}{~~F} & Enter  \\
+		\chordl{~~~~}{~~F} & Shift  \\
+		\chordl{PRMI}{~~F} & Caps  \\
+		\chordl{~R~I}{~~F} & Tab  \\
+		\chordl{~~M~}{~~F} & Backspace  \\
+		\chordl{~RM~}{~~F} & Delete  \\
+		\chordl{P~MI}{~~F} & Scroll  \\
+		\chordl{P~M~}{~~F} & Print  \\
+	\end{tabular}
+
+	\begin{tabular}{l l | c}
+		\multicolumn2c{Chord}&\multicolumn1c{Prefix}\\
+		\texttt{PRMI}&\texttt{NCF}& \\
+		\hline
+		\chordl{~R~~}{~~F} & Right  \\
+		\chordl{PR~~}{~~F} & Down  \\
+		\chordl{PRM~}{~~F} & PgDown  \\
+		\chordl{~~~I}{~~F} & Left  \\
+		\chordl{~~MI}{~~F} & Up  \\
+		\chordl{~RMI}{~~F} & PgUp  \\
+		\chordl{PR~I}{~~F} & Home  \\
+		\chordl{P~~I}{~~F} & End  \\
+	\end{tabular}
+
+	\begin{tabular}{l l | c c}
+		\multicolumn2c{Chord}&\multicolumn2c{Prefix}\\
+		\texttt{PRMI}&\texttt{NCF}& &F \\
+		\hline
+		\chordl{PR~~}{N~~} & ; & : \\
+		\chordl{~~M~}{N~~} & , & < \\
+		\chordl{~RM~}{N~~} & . & > \\
+		\chordl{~RMI}{N~~} & ' & " \\
+		\chordl{P~~~}{N~~} &\multicolumn2c{F-Key Prefix}\\
+		\chordl{~R~~}{N~~} &\multicolumn2c{Esc}\\
+		\chordl{PRM~}{N~~} &\multicolumn2c{Alt}\\
+		\chordl{P~~I}{N~~} &\multicolumn2c{Ins}\\
+		\chordl{PR~I}{N~~} &\multicolumn2c{Ctrl}\\
+		\chordl{PRMI}{N~~} &\multicolumn2c{Num Mode Lock}\\
+		\chordl{PRMI}{NC~} &\multicolumn2c{Num Lock}\\
+		\chordl{~~~~}{N~F} &\multicolumn2c{Break}\\
+		\chordl{~~~~}{NCF} &\multicolumn2c{RESET}\\
+	\end{tabular}
+
+
+
+
+
+
+
+
+\end{multicols}
+
+\end{document}
