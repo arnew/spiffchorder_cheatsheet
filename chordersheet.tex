@@ -2,6 +2,9 @@
 
 \usepackage{multicol}
 
+\usepackage{hyperref}
+\usepackage{url}
+
 %\paperheight 297mm
 %\paperwidth 210mm
 %\areaset{190mm}{270mm}
@@ -23,11 +26,17 @@
 
 \begin{document}
 
+\begin{center}
+{\Large Spiffchorder}\\
+\url{http://symlink.dk}
+\end{center}
+
 \begin{multicols}{2}
 	\begin{tabular}{l l | c c c c}
 		\multicolumn2c{Chord}&\multicolumn4c{Prefix}\\
 		\texttt{PRMI}&\texttt{NCF}& &F&N&CN\\
 		\hline
+		\chordl{~~~~}{~C~}	& \verb*+ + & \verb*+ + & 1 & !\\
 		\chordl{~RMI}{~C~}	& a & A & \multicolumn{2}{c}{+}\\
 		\chordl{P~~I}{~~~} 	& b & B & $\backslash$ & | \\
 		\chordl{~~M~}{~C~} 	& c & C & 7 & \& \\
